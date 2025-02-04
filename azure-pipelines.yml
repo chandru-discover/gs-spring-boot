@@ -2,7 +2,8 @@ trigger:
 - main  # Trigger pipeline on changes to the 'main' branch
 
 pool:
-  vmImage: ubuntu-latest  # Use a Microsoft-hosted agent
+  #vmImage: ubuntu-latest
+  name: 'MySelfHostedAgentPool'  # Use a Microsoft-hosted agent
 
 variables:
   MAVEN_CACHE_FOLDER: $(Pipeline.Workspace)/.m2/repository
